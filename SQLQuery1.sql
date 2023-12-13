@@ -118,10 +118,9 @@ select
 	SUM(CONVERT(decimal, new_cases)) as 'Total New Cases',
 	sum(cast(new_deaths as decimal)) as 'Total New Deaths',
 	sum(cast(new_deaths as  decimal))/sum(cast(new_cases as decimal)*100) as 'World Wide Death Precentage'
-	--Max(convert(decimal,total_deaths)/CONVERT(decimal,population)*100) as DeathPercentageCountries
 from
 	CovidDeaths
---where 
---	continent != ''
---order by 
---	1,2
+where 
+	continent != ''
+order by 
+	1,2
