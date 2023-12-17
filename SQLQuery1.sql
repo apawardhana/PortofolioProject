@@ -1,3 +1,5 @@
+-- Data Exploration Part 1
+
 select *
 from CovidDeaths
 where continent is not null
